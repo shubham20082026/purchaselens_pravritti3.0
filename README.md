@@ -10,6 +10,7 @@ This repository is a **development prototype**, not a finished or independently 
 
 ## What is in the prototype
 
+- A **landing page** with a worked example (laptop, pay in full vs monthly), how-it-works steps, Guided/Pro choice, pricing and FAQ, merged from the standalone PurchaseLens pricing guide site.
 - A private **Try demo** session with realistic sample data and temporary Premium tools; each demo is independent, expires after 24 hours, and is removed on exit.
 - A **Guided** experience with ten steps, plain-language prompts, hints, Back navigation, a progress indicator and a summary.
 - A **Pro** workspace with editable inputs, a comparison, cash-flow chart, timeline filtering, an assumption receipt, keyboard shortcuts, and a bulk one-time-expense entry action.
@@ -41,6 +42,7 @@ The two-path, dated-cushion presentation and Guided/Pro handoff are a product po
 | Guided and Pro interfaces | Included | Included |
 | Upfront vs instalment costs, cushion and dated cash flow | Included | Included |
 | Current plan, 10 snapshots and progress | Included | Included |
+| Compare up to 3 offers, PDF export, unlimited named plans | Not available | Planned, not yet built |
 | Unexpected-expense scenario and CSV export | Locked | Intended to be included |
 | Illustrative price | ₹0 | ₹99/month or ₹899/year |
 
