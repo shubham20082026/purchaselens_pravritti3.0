@@ -233,6 +233,12 @@ A balance or cushion warning is an estimate based on those assumptions. The tool
 5. Publish appropriate privacy, terms, pricing and refund pages, decide data retention/deletion policies, and obtain relevant legal and regulatory advice for the target market.
 6. Configure a domain, backups, monitoring and support contact. Google sign-in requires a real OAuth setup, verified callback and secure account linking; it is not connected in this prototype.
 
+## To see an alternate landing page concept
+
+[Alternate Landing Page Concept](https://purchase-lens-pricing-guide.lovable.app/)
+
+
+
 ## Project layout
 
 ```text
