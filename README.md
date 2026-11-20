@@ -5,6 +5,27 @@
 
 PurchaseLens is an early product prototype for comparing an upfront purchase with monthly instalments. It shows the cost of an offer, the estimated effect of payments on a user's cash flow, and how those payments may affect a cushion the user wants to keep. It is intended for planning and education; it is not a lender or financial adviser.
 
+## Status
+
+This repository is a **development prototype**, not a finished or independently audited financial product. Accounts and saved progress use a real SQLite database, while the payment flow is a non-billing mock. Premium subscriptions cannot be purchased or activated in this version. Google sign-in, email verification and account recovery are not implemented. Do not publish or use it to collect real user financial data until the launch work below is complete.
+
+## What is in the prototype
+
+- A **landing page** with a worked example (laptop, pay in full vs monthly), how-it-works steps, Guided/Pro choice, pricing and FAQ, merged from the standalone PurchaseLens pricing guide site.
+- A private **Try demo** session with realistic sample data and temporary Premium tools; each demo is independent, expires after 24 hours, and is removed on exit.
+- A **Guided** experience with ten steps, plain-language prompts, hints, Back navigation, a progress indicator and a summary.
+- A **Pro** workspace with editable inputs, a comparison, cash-flow chart, timeline filtering, an assumption receipt, keyboard shortcuts, and a bulk one-time-expense entry action.
+- An offer breakdown for the listed price, cash-only discount, instalments and applicable upfront fees and tax entered by the user.
+- A user-chosen cushion, the first projected event below that cushion, and the amount by which the lowest balance falls short.
+- A wait-to-buy snapshot that shows a modelled event after which a cash purchase could leave the chosen cushion intact **at that moment**. Later bills can still reduce the balance.
+- A Premium **scenario lab** to model an unexpected expense, and a Premium CSV export. These have server-side tier checks; the mock checkout does not activate access.
+- Email and password registration and sign-in, a profile, mode and appearance settings, password changes, account deletion and automatic saving of a single plan and wizard progress.
+- Up to 10 named plan snapshots, with confirmation before loading or deleting one, and an optional `.ics` reminder for manual import into a calendar.
+- Dark and light appearances, a larger-text option, responsive layouts and an always-available Help button.
+- Draft Privacy and Terms screens that must be reviewed and completed before public launch.
+
+These are product hypotheses and need user testing. Other products offer overlapping features; the project does not claim exclusive ownership of these ideas.
+
 ## Pravritti 2026 — judging criteria overview
 
 PurchaseLens is presented as a **build-first financial decision-support prototype**. Its core question is practical: *Will paying now or paying monthly leave enough money available when upcoming expenses arrive?* The product turns an offer into two dated cash-flow paths and makes potential cushion shortfalls visible rather than reducing the choice to an EMI amount alone.
@@ -79,27 +100,6 @@ The highest-weighted criterion is a functioning MVP. A suggested demonstration u
 **Demo integrity:** a successful local run and test results should be demonstrated live, not assumed from README claims. Avoid presenting simulated checkout as a payment integration or synthetic inputs as customer validation. Keep a short screen recording as a fallback if permitted by the event rules.
 
 ---
-
-## Status
-
-This repository is a **development prototype**, not a finished or independently audited financial product. Accounts and saved progress use a real SQLite database, while the payment flow is a non-billing mock. Premium subscriptions cannot be purchased or activated in this version. Google sign-in, email verification and account recovery are not implemented. Do not publish or use it to collect real user financial data until the launch work below is complete.
-
-## What is in the prototype
-
-- A **landing page** with a worked example (laptop, pay in full vs monthly), how-it-works steps, Guided/Pro choice, pricing and FAQ, merged from the standalone PurchaseLens pricing guide site.
-- A private **Try demo** session with realistic sample data and temporary Premium tools; each demo is independent, expires after 24 hours, and is removed on exit.
-- A **Guided** experience with ten steps, plain-language prompts, hints, Back navigation, a progress indicator and a summary.
-- A **Pro** workspace with editable inputs, a comparison, cash-flow chart, timeline filtering, an assumption receipt, keyboard shortcuts, and a bulk one-time-expense entry action.
-- An offer breakdown for the listed price, cash-only discount, instalments and applicable upfront fees and tax entered by the user.
-- A user-chosen cushion, the first projected event below that cushion, and the amount by which the lowest balance falls short.
-- A wait-to-buy snapshot that shows a modelled event after which a cash purchase could leave the chosen cushion intact **at that moment**. Later bills can still reduce the balance.
-- A Premium **scenario lab** to model an unexpected expense, and a Premium CSV export. These have server-side tier checks; the mock checkout does not activate access.
-- Email and password registration and sign-in, a profile, mode and appearance settings, password changes, account deletion and automatic saving of a single plan and wizard progress.
-- Up to 10 named plan snapshots, with confirmation before loading or deleting one, and an optional `.ics` reminder for manual import into a calendar.
-- Dark and light appearances, a larger-text option, responsive layouts and an always-available Help button.
-- Draft Privacy and Terms screens that must be reviewed and completed before public launch.
-
-These are product hypotheses and need user testing. Other products offer overlapping features; the project does not claim exclusive ownership of these ideas.
 
 ## Product positioning and competitors
 
