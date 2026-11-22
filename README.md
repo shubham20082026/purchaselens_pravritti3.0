@@ -5,10 +5,6 @@
 
 PurchaseLens is an early product prototype for comparing an upfront purchase with monthly instalments. It shows the cost of an offer, the estimated effect of payments on a user's cash flow, and how those payments may affect a cushion the user wants to keep. It is intended for planning and education; it is not a lender or financial adviser.
 
-## Status
-
-This repository is a **development prototype**, not a finished or independently audited financial product. Accounts and saved progress use a real SQLite database, while the payment flow is a non-billing mock. Premium subscriptions cannot be purchased or activated in this version. Google sign-in, email verification and account recovery are not implemented. Do not publish or use it to collect real user financial data until the launch work below is complete.
-
 ## What is in the prototype
 
 - A **landing page** with a worked example (laptop, pay in full vs monthly), how-it-works steps, Guided/Pro choice, pricing and FAQ, merged from the standalone PurchaseLens pricing guide site.
@@ -25,6 +21,45 @@ This repository is a **development prototype**, not a finished or independently 
 - Draft Privacy and Terms screens that must be reviewed and completed before public launch.
 
 These are product hypotheses and need user testing. Other products offer overlapping features; the project does not claim exclusive ownership of these ideas.
+
+## Landing Page:
+
+<img width="1887" height="905" alt="Screenshot 2026-11-22 081755" src="https://github.com/user-attachments/assets/a2189360-0581-4781-b9ef-783740931ad8" />
+
+<img width="1891" height="900" alt="Screenshot 2026-11-22 081827" src="https://github.com/user-attachments/assets/1609d36c-dee1-42be-b9cf-2960def03472" />
+
+<img width="1877" height="882" alt="Screenshot 2026-11-22 081910" src="https://github.com/user-attachments/assets/097df082-5933-4f3e-8a39-05638b1491c7" />
+
+<img width="988" height="846" alt="Screenshot 2026-11-22 081944" src="https://github.com/user-attachments/assets/0292d059-3ad8-4dde-9d6d-9b1d243c5342" />
+
+## To see an alternate landing page concept
+
+[Alternate Landing Page Concept](https://purchase-lens-pricing-guide.lovable.app/)
+
+## Pro Mode:
+
+<img width="1895" height="912" alt="Screenshot 2026-11-22 082028" src="https://github.com/user-attachments/assets/28835ad6-5833-4eba-9ad1-954cf5e3c80b" />
+
+<img width="1897" height="886" alt="Screenshot 2026-11-22 082237" src="https://github.com/user-attachments/assets/45f94ac8-c8b3-4581-b51a-a0b05c796ae1" />
+
+<img width="1266" height="777" alt="Screenshot 2026-11-22 082302" src="https://github.com/user-attachments/assets/2f1f367e-44c6-463f-ab5e-6bdf0de5b85f" />
+
+## Guide Mode:
+
+<img width="1736" height="901" alt="Screenshot 2026-11-22 082112" src="https://github.com/user-attachments/assets/27cbba5c-1e91-4094-af78-f3b959265e90" />
+
+<img width="1900" height="901" alt="Screenshot 2026-11-22 082447" src="https://github.com/user-attachments/assets/c6e9d1d9-007e-465f-b0eb-b8f2fc2c79ca" />
+
+## Saved Plans:
+
+<img width="1890" height="912" alt="image" src="https://github.com/user-attachments/assets/b4584748-6576-45d7-9420-51f9af15b281" />
+
+<img width="1896" height="883" alt="Screenshot 2026-11-22 082551" src="https://github.com/user-attachments/assets/370d7b87-8fd7-4d13-b67c-9b2e064dc280" />
+
+## Settings:
+
+<img width="1763" height="897" alt="Screenshot 2026-11-22 082629" src="https://github.com/user-attachments/assets/ab5cf391-8c12-4dc3-a501-1d3cbf10bc20" />
+
 
 ## Pravritti 2026 — judging criteria overview
 
@@ -224,6 +259,10 @@ Income, regular monthly expenses and one-time expenses are entered by the user a
 
 A balance or cushion warning is an estimate based on those assumptions. The tool cannot verify the offer, guarantee expected income, predict surprise costs or determine whether a purchase is affordable for someone. Review the actual offer and consider professional advice where appropriate.
 
+## Status
+
+This repository is a **development prototype**, not a finished or independently audited financial product. Accounts and saved progress use a real SQLite database, while the payment flow is a non-billing mock. Premium subscriptions cannot be purchased or activated in this version. Google sign-in, email verification and account recovery are not implemented. Do not publish or use it to collect real user financial data until the launch work below is complete.
+
 ## Before public launch
 
 1. Validate the product with prospective users, including people who need a guided experience; review accessibility and perform real device and browser testing.
@@ -232,11 +271,6 @@ A balance or cushion warning is an estimate based on those assumptions. The tool
 4. Integrate a real payment provider and verified webhook, manage subscription state and cancellation on the server, and test purchase, renewal, failure and refund flows. Follow the provider's security and PCI guidance; do not collect raw card data yourself.
 5. Publish appropriate privacy, terms, pricing and refund pages, decide data retention/deletion policies, and obtain relevant legal and regulatory advice for the target market.
 6. Configure a domain, backups, monitoring and support contact. Google sign-in requires a real OAuth setup, verified callback and secure account linking; it is not connected in this prototype.
-
-## To see an alternate landing page concept
-
-[Alternate Landing Page Concept](https://purchase-lens-pricing-guide.lovable.app/)
-
 
 
 ## Project layout
