@@ -32,9 +32,9 @@ These are product hypotheses and need user testing. Other products offer overlap
 
 <img width="988" height="846" alt="Screenshot 2026-11-22 081944" src="https://github.com/user-attachments/assets/0292d059-3ad8-4dde-9d6d-9b1d243c5342" />
 
-## To see an alternate landing page concept
+## To see an alternate User Interface and Landing Page:
 
-[Alternate Landing Page Concept](https://purchase-lens-pricing-guide.lovable.app/)
+[Alternate UI and Landing Page Concept](https://purchaselens-shubhamprmr.lovable.app)
 
 ## Pro Mode:
 
